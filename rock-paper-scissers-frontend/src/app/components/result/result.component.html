@@ -1,0 +1,14 @@
+<div class="w-full flex flex-col gap-10 items-center">
+  <h2 class="text-3xl">
+    The result is: <span class="text-red-500">{{ myGame.winner }}</span>
+  </h2>
+  <div class="text-xl flex flex-row gap-36">
+    <h1 class="">
+      Player: <span class="text-red-500">{{ myGame.player }}</span>
+    </h1>
+    <h1>
+      Computer: <span class="text-red-500">{{ myGame.computer }}</span>
+    </h1>
+  </div>
+  <app-button title="Play Again!" (btnOnClick)="playAgain()"></app-button>
+</div>

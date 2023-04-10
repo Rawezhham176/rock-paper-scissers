@@ -1,0 +1,16 @@
+<table class="border-collapse border border-slate-500 text-left font-light">
+  <thead>
+    <tr>
+      <th class="border border-slate-600 p-2 font-medium">Id</th>
+      <th class="border border-slate-600 p-3 font-medium">Winner</th>
+      <th class="border border-slate-600 p-3 font-medium">Date of play</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let game of games">
+      <td class="border border-slate-700 p-2">{{ game.id }}</td>
+      <td class="border border-slate-700 p-3">{{ game.winner }}</td>
+      <td class="border border-slate-700 p-3">{{ game.date }}</td>
+    </tr>
+  </tbody>
+</table>
